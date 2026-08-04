@@ -58,9 +58,9 @@
 ## 🔍 检查更新
 
 **更新检查地址**：
-[默认更新网站，作者认为比较全能的主要网站](https://bzsx.my.canvasite.cn/update)
 
-[更快速的网站，比上面那个能快一两秒访问](bzsx.lhx520.icu)
+-[默认更新网站](https://bzsx.my.canvasite.cn/update)
+-[更快速的网站](https://bzsx.lhx520.icu)
 
 ## 👤 关于作者
 
