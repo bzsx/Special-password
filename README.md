@@ -50,15 +50,16 @@
 
 ## 📦 下载与安装
 
-- **最新版本**：v1.0（正式版）
+- **最新版本**：**v1.3（正式版）**
 - **下载地址**：[点击下载 APK](https://github.com/bzsx/Special-password/releases)
 - **系统要求**：Android 7.0 及以上
 
 
 ## 🔍 检查更新
 
-**更新检查地址**：[bzsx.my.canvasite.cn/update](https://bzsx.my.canvasite.cn/update)
-
+**更新检查地址**：
+[默认更新网站，作者认为比较全能的主要网站](https://bzsx.my.canvasite.cn/update)
+[更快速的网站，比上面那个能快一两秒访问](bzsx.lhx520.icu)
 
 ## 👤 关于作者
 
