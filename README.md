@@ -50,7 +50,7 @@
 
 ## 📦 下载与安装
 
-- **最新版本**：**v1.3（正式版）**
+- **最新版本**：**v1.3.1（正式版）**
 - **下载地址**：[点击下载 APK](https://github.com/bzsx/Special-password/releases)
 - **系统要求**：Android 7.0 及以上
 
