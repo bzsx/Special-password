@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="?attr/colorSurface">
+
+    <TextView
+        android:id="@+id/tv_verify_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="首次使用验证"
+        android:textSize="24sp"
+        android:textColor="?attr/colorOnSurface"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tv_verify_declaration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="为了防止软件倒卖，作者承诺该软件完全免费。如你想使用此软件，请答应作者该软件禁止商用，谢谢配合。"
+        android:textSize="14sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="如果你是从任何渠道付费购买，请立即退款。"
+        android:textSize="14sp"
+        android:textColor="?attr/colorError"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ群："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_qq_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="241333711（点击复制）"
+            android:textSize="14sp"
+            android:textColor="?attr/colorPrimary"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B站："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bilibili_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝藏水仙的个人主页"
+            android:textSize="14sp"
+            android:textColor="?attr/colorPrimary"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- 倒计时提示 -->
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="10 秒"
+        android:textColor="#2196F3"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请仔细阅读上述声明，倒计时结束后可进入。"
+        android:textSize="13sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不再提示并进入"
+        app:cornerRadius="28dp"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:alpha="0.5" />
+
+</LinearLayout>

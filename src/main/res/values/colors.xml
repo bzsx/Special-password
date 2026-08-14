@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== M3 浅色主题色（基于绿色的 Harmony 配色） ===== -->
+    <color name="m3_primary">#FF2E7D32</color>
+    <color name="m3_on_primary">#FFFFFFFF</color>
+    <color name="m3_primary_container">#FFA5D6A7</color>
+    <color name="m3_on_primary_container">#FF002106</color>
+    <color name="m3_secondary">#FF52634D</color>
+    <color name="m3_on_secondary">#FFFFFFFF</color>
+    <color name="m3_secondary_container">#FFD5E8CC</color>
+    <color name="m3_on_secondary_container">#FF101F0E</color>
+    <color name="m3_tertiary">#FF39656B</color>
+    <color name="m3_on_tertiary">#FFFFFFFF</color>
+    <color name="m3_tertiary_container">#FFBCEBF1</color>
+    <color name="m3_on_tertiary_container">#FF001F22</color>
+    <color name="m3_error">#FFBA1A1A</color>
+    <color name="m3_on_error">#FFFFFFFF</color>
+    <color name="m3_error_container">#FFFFDAD6</color>
+    <color name="m3_on_error_container">#FF410002</color>
+    <color name="m3_background">#FFF8FAF5</color>
+    <color name="m3_on_background">#FF1A1C19</color>
+    <color name="m3_surface">#FFF8FAF5</color>
+    <color name="m3_on_surface">#FF1A1C19</color>
+    <color name="m3_surface_variant">#FFDEE4D8</color>
+    <color name="m3_on_surface_variant">#FF43483F</color>
+    <color name="m3_outline">#FF73796F</color>
+    <color name="m3_outline_variant">#FFC2C8BB</color>
+
+    <!-- ===== M3 深色主题色 ===== -->
+    <color name="m3_dark_primary">#FF8BC98E</color>
+    <color name="m3_dark_on_primary">#FF00390A</color>
+    <color name="m3_dark_primary_container">#FF145B1E</color>
+    <color name="m3_dark_on_primary_container">#FFA5D6A7</color>
+    <color name="m3_dark_secondary">#FFB9CCB1</color>
+    <color name="m3_dark_on_secondary">#FF243422</color>
+    <color name="m3_dark_secondary_container">#FF3B4B37</color>
+    <color name="m3_dark_on_secondary_container">#FFD5E8CC</color>
+    <color name="m3_dark_tertiary">#FFA0CFD5</color>
+    <color name="m3_dark_on_tertiary">#FF06363B</color>
+    <color name="m3_dark_tertiary_container">#FF214C52</color>
+    <color name="m3_dark_on_tertiary_container">#FFBCEBF1</color>
+    <color name="m3_dark_error">#FFFFB4AB</color>
+    <color name="m3_dark_on_error">#FF690005</color>
+    <color name="m3_dark_error_container">#FF93000A</color>
+    <color name="m3_dark_on_error_container">#FFFFDAD6</color>
+    <color name="m3_dark_background">#FF1A1C19</color>
+    <color name="m3_dark_on_background">#FFE3E3DD</color>
+    <color name="m3_dark_surface">#FF1A1C19</color>
+    <color name="m3_dark_on_surface">#FFE3E3DD</color>
+    <color name="m3_dark_surface_variant">#FF43483F</color>
+    <color name="m3_dark_on_surface_variant">#FFC2C8BB</color>
+    <color name="m3_dark_outline">#FF8C9287</color>
+    <color name="m3_dark_outline_variant">#FF43483F</color>
+
+    <!-- ===== 旧颜色保留（供引用不冲突） ===== -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="primary_dark">#FF1B5E20</color>
+    <color name="primary">#FF2E7D32</color>
+    <color name="error_color">#FFCF6679</color>
+    <color name="link_color">#FF64B5F6</color>
+    <color name="ic_launcher_background">#FF1B5E20</color>
+    <color name="light_background">#FFF8FAF5</color>
+    <color name="light_surface">#FFF5F5F5</color>
+    <color name="light_card">#FFFFFFFF</color>
+    <color name="light_text_primary">#FF1A1C19</color>
+    <color name="light_text_secondary">#FF605A50</color>
+    <color name="dark_background">#FF1A1C19</color>
+    <color name="dark_surface">#FF1C1C1E</color>
+    <color name="dark_card">#FF252528</color>
+    <color name="dark_text_primary">#FFE3E3DD</color>
+    <color name="dark_text_secondary">#FF9E9E9E</color>
+
+    <!-- 预选主题色（保留） -->
+    <color name="theme_green">#FF2E7D32</color>
+    <color name="theme_blue">#FF1565C0</color>
+    <color name="theme_purple">#FF7B1FA2</color>
+    <color name="theme_red">#FFC62828</color>
+    <color name="theme_orange">#FFE65100</color>
+    <color name="theme_teal">#FF00695C</color>
+</resources>

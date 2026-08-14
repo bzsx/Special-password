@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 蓝色三角形/斜线角标：一个旋转90度的半矩形，形成右上角斜线标签效果 -->
+    <item>
+        <rotate
+            android:fromDegrees="135"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <solid android:color="#2196F3" />
+                <size android:width="20dp" android:height="20dp" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
