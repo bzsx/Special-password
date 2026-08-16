@@ -101,7 +101,7 @@
 
 ## 📦 下载与安装
 
-- **下载地址**：[点击查看 APK](https://GitHub.com/bzsx/bzsx_password/realise)
+- **下载地址**：[点击查看 APK](https://github.com/bzsx/bzsx_password/releases)
 - **系统要求**：Android 7.0 及以上
 
 
