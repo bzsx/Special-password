@@ -1,0 +1,23 @@
+# 构建产物（编译缓存、APK等）
+build/
+*.apk
+*.aab
+*.dex
+
+# 编译器/IDE 缓存
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# CodeAssist / 项目临时备份
+.backup/
+.platform/
+
+# 日志
+*.log
+
+# 其他临时文件
+.DS_Store
+Thumbs.db
+~$*

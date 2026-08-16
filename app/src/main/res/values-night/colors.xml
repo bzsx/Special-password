@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== 深色模式 M3 语义色（基于绿色 Harmony 深色调配） ===== -->
+
+    <!-- 背景近似平板的深色 -->
+    <color name="m3_background">#FF101411</color>
+    <color name="m3_on_background">#FFE2E3DC</color>
+    <color name="m3_surface">#FF101411</color>
+    <color name="m3_on_surface">#FFE2E3DC</color>
+    <color name="m3_surface_variant">#FF424940</color>
+    <color name="m3_on_surface_variant">#FFC2C9BC</color>
+
+    <!-- M3 surfaceContainer 系列（悬浮元素/底部导航用） -->
+    <color name="m3_surface_container_lowest">#FF0B0F0C</color>
+    <color name="m3_surface_container_low">#FF181C19</color>
+    <color name="m3_surface_container">#FF1C211D</color>
+    <color name="m3_surface_container_high">#FF262B27</color>
+    <color name="m3_surface_container_highest">#FF313632</color>
+
+    <color name="m3_primary">#FF8BC98E</color>
+    <color name="m3_on_primary">#FF00390A</color>
+    <color name="m3_primary_container">#FF145B1E</color>
+    <color name="m3_on_primary_container">#FFA5D6A7</color>
+    <color name="m3_secondary">#FFB9CCB1</color>
+    <color name="m3_on_secondary">#FF243422</color>
+    <color name="m3_secondary_container">#FF3B4B37</color>
+    <color name="m3_on_secondary_container">#FFD5E8CC</color>
+    <color name="m3_tertiary">#FFA0CFD5</color>
+    <color name="m3_on_tertiary">#FF06363B</color>
+    <color name="m3_tertiary_container">#FF214C52</color>
+    <color name="m3_on_tertiary_container">#FFBCEBF1</color>
+    <color name="m3_error">#FFFFB4AB</color>
+    <color name="m3_on_error">#FF690005</color>
+    <color name="m3_error_container">#FF93000A</color>
+    <color name="m3_on_error_container">#FFFFDAD6</color>
+    <color name="m3_outline">#FF8C9287</color>
+    <color name="m3_outline_variant">#FF424940</color>
+
+    <!-- 旧色深色回退 -->
+    <color name="light_background">#FF101411</color>
+    <color name="light_surface">#FF101411</color>
+    <color name="light_card">#FF1C211D</color>
+    <color name="light_text_primary">#FFE2E3DC</color>
+    <color name="light_text_secondary">#FFC2C9BC</color>
+</resources>

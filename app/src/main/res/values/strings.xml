@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">神奇的密码</string>
+    <string name="add_password">添加密码</string>
+    <string name="edit_password">编辑密码</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="name">名称</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="search_hint">搜索名称...</string>
+    <string name="empty_list">还没有密码，点右上角添加吧</string>
+    <string name="no_search_result">没有找到匹配的密码</string>
+    <string name="copy_password">复制密码</string>
+    <string name="password_copied">密码已复制到剪贴板</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="delete_confirm">确认删除</string>
+    <string name="delete_confirm_message">确定要删除这条密码记录吗？</string>
+    <string name="about">关于</string>
+    <string name="about_title">关于</string>
+    <string name="maker">制作：宝藏水仙</string>
+    <string name="bilibili_link">B站个人主页</string>
+    <string name="email_address">邮箱联系</string>
+    <string name="github_link">前往GitHub项目</string>
+    <string name="disclaimer">本软件纯本地运行，不联网，不收集任何数据</string>
+    <string name="version_format">版本 %s</string>
+    <string name="set_master_password">设置主密码</string>
+    <string name="enter_master_password">请输入主密码</string>
+    <string name="confirm_master_password">请再次输入主密码</string>
+    <string name="master_password_hint">请输入6位以上主密码</string>
+    <string name="master_password_error">主密码至少需要6位</string>
+    <string name="master_password_mismatch">两次输入的密码不一致</string>
+    <string name="master_password_wrong">主密码错误</string>
+    <string name="confirm">确认</string>
+    <string name="unlock">解锁</string>
+    <string name="name_required">请输入名称</string>
+    <string name="account_required">请输入账号</string>
+    <string name="password_required">请输入密码</string>
+    <string name="fill_all_fields">请填写所有必填字段</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="?attr/colorSurface">
+
+    <!-- 预选颜色区域 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预选颜色"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurface"
+        android:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:id="@+id/layout_preset_colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorOutlineVariant"
+        android:layout_marginVertical="16dp" />
+
+    <!-- 手动调色区域 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手动调色"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurface"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- RGB三色滑块 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <!-- 红色 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="R"
+                android:textSize="14sp"
+                android:textColor="#E53935"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekbar_red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="46" />
+
+            <TextView
+                android:id="@+id/tv_red_value"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:gravity="end"
+                android:text="46" />
+
+        </LinearLayout>
+
+        <!-- 绿色 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textSize="14sp"
+                android:textColor="#43A047"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekbar_green"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="125" />
+
+            <TextView
+                android:id="@+id/tv_green_value"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:gravity="end"
+                android:text="125" />
+
+        </LinearLayout>
+
+        <!-- 蓝色 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textSize="14sp"
+                android:textColor="#1E88E5"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekbar_blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="50" />
+
+            <TextView
+                android:id="@+id/tv_blue_value"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:gravity="end"
+                android:text="50" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 预览色块 -->
+    <TextView
+        android:id="@+id/tv_color_preview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="预览颜色"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#FF2E7D32"
+        android:radius="8dp" />
+
+</LinearLayout>

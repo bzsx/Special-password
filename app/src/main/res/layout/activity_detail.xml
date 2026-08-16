@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material 3 风格的详情页布局，支持预测性返回手势 + 上一页预览 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 上一页预览背景层 — 预测性返回手势时显示 MainActivity 截图 -->
+    <ImageView
+        android:id="@+id/iv_previous_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+    <!-- 当前页面内容层 — 返回手势时整体移动 -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSurface">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="0dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- M3 Toolbar — 使用 Surface 色，配合主题色标题 -->
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorSurface"
+                    app:navigationIcon="?attr/homeAsUpIndicator"
+                    app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+                    app:titleCentered="false">
+
+                    <TextView
+                        android:id="@+id/tv_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                </com.google.android.material.appbar.MaterialToolbar>
+
+                <!-- 内容区域（M3 卡片，更大圆角，更现代） -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="8dp">
+
+                    <!-- 名称卡片 — M3 大圆角 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp"
+                        app:contentPadding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/label_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name"
+                                android:textSize="12sp"
+                                android:textColor="?attr/colorOnSurfaceVariant"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="0.04" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="?attr/colorOnSurface"
+                                android:fontFamily="sans-serif" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- 账号卡片 — M3 大圆角 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp"
+                        app:contentPadding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/label_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/account"
+                                android:textSize="12sp"
+                                android:textColor="?attr/colorOnSurfaceVariant"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="0.04" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textSize="16sp"
+                                android:textColor="?attr/colorOnSurface" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- 密码卡片 — M3 大圆角 + 强调色 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp"
+                        app:contentPadding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/label_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/password"
+                                android:textSize="12sp"
+                                android:textColor="?attr/colorOnSurfaceVariant"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="0.04" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textSize="18sp"
+                                android:textColor="?attr/colorOnSurface"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- 网站信息卡片 — 用于自动填充匹配 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp"
+                        app:contentPadding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/label_website"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="网站 / 应用"
+                                android:textSize="12sp"
+                                android:textColor="?attr/colorOnSurfaceVariant"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="0.04" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_website"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textSize="16sp"
+                                android:textColor="?attr/colorOnSurface"
+                                android:fontFamily="sans-serif" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- M3 填充按钮（Filled Button）— 使用主题色 -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_copy_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="@string/copy_password"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        app:cornerRadius="28dp"
+                        app:iconGravity="textStart"
+                        app:icon="@android:drawable/ic_menu_edit" />
+
+                    <!-- 底部分隔，确保滚动时不被遮挡 -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>
