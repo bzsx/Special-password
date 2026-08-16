@@ -101,8 +101,7 @@
 
 ## 📦 下载与安装
 
-- **最新版本**：v1.3.6（正式版）
-- **下载地址**：[点击下载 APK](https://223-109-125-226-v3.pd1.cjjd19.com/user-other-free-download-cdn.123295.com/123-678/a48fec14/1853663930-0/a48fec141a003dd2222f866ca6dceea6/c-m8012?bi=162747709&r=RWT4WA&t=1787052123&bzc=1&bzs=313835333636333933303a323a313a36313336313837&bzp=0&ur=aalgvnugpegpe&urn=0&v=5&s=178705212386e00115ce347f1915199f8371ae5257&filename=%E7%A5%9E%E5%A5%87%E7%9A%84%E5%AF%86%E7%A0%81_1.3.6.apk&cache_type=2&x-mf-biz-cid=15ae584c-1d5e-4cf8-a77b-370a86e941a5&auto_redirect=0&ndcp=1)
+- **下载地址**：[点击查看 APK](https://GitHub.com/bzsx/bzsx_password/realise)
 - **系统要求**：Android 7.0 及以上
 
 
